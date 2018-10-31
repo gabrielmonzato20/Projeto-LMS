@@ -1,0 +1,7 @@
+@font-face{
+    font-family: 'ola';
+    src: url("../fonts/SECRCODE.TTF");
+}
+h1#fonte{
+    font-family: 'ola';
+}
