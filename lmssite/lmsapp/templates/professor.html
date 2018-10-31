@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<title>FIT - FACULDADE IMPACTA DE TECNOLOGIA</title>
+{% load staticfiles %}
+<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+<link href="{% static "css/flexslider.css" %}" rel="stylesheet">
+<link href="{% static "css/jquery.fancybox.css" %}" rel="stylesheet">
+<link href="{% static "css/main.css" %}" rel="stylesheet">
+<link href="{% static "css/responsive.css" %}" rel="stylesheet">
+<link href="{% static "css/animate.min.css" %}" rel="stylesheet">
+<link href="{% static "css/font-icon.css" %}" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href= "{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+</head>
+
+<body>
+        <section class="logo" role="logo"> 
+    <section class="banner" role="banner"> 
+        <!--Navegaçao -->
+        <header id="header">
+            <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="{% url 'index' %}">HOME</a></li>           
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a>
+            </div>
+        </header>
+        <!--Navegaçao --> 
+        <!-- banner  -->
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+            <div class="banner-text text-center">
+            <h1>CADASTRO DE PROFESSOR</h1>
+            <p>FACULDADE DE TECNOLOGIA DE SÃO PAULO</p>        
+        <!-- banner text --> 
+        </div>
+        <div>
+            <form action="#"method="post">
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <legend>IDENTIFICAÇÃO DO PROFESSOR</legend>                                  
+                        <p><label for="nome">Nome:</label>  <input type="text" id="nome" name="nome" size="30" maxlength="35" placeholder=" Digite o nome"></p><br/><br/>
+                        <p><label for="cidade">CPF:</label>  <input type="text" id="CPF" name="CPF" size="30" maxlength="11" placeholder=" Digite o CPF"></p><br/><br/>
+                        <p><label for="email">E-mail:</label>  <input type="email" id="email" name="email" size="30" placeholder=" Digite o E-mail"></p><br/><br/>                                                                                                     
+                        <p><label for="telefone">Telefone:</label>  <input type="text" id="telefone" name="telefone" size="30" placeholder=" Digite o telefone"></p><br/>
+                        <p><label for="nome">Login:</label>  <input type="text" id="nome" name="nome" size="30" maxlength="7" placeholder=" Crie um Login"></p><br/><br/>                                             
+                        <p><label for="snome">Senha:</label>  <input type="password" id="password" name="password" size="30" maxlength="15" placeholder=" Crie uma senha"></p><br/>                                                                                                                                             
+                            
+                        <legend>Sexo</legend>      
+                            <input type="radio" name="sexo" value="masculino" id="masc"> <label for="masc">Masculino</label><br/>  
+                            <input type="radio" name="sexo" value="feminino" id="femn"> <label for="femn">Feminino</label><br/><br/>  
+                        <button type="submit" name="submit">Enviar</button>                                                      
+                    </div><br/>                                 
+                </fieldset> 
+            </form>                                        
+    </select>
+
+</body>
+</html>

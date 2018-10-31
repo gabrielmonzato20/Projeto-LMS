@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>FIT - FACULDADE IMPACTA DE TECNOLOGIA</title>
+        {% load staticfiles %}
+        <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/flexslider.css" %}" rel="stylesheet">
+        <link href="{% static "css/jquery.fancybox.css" %}" rel="stylesheet">
+        <link href="{% static "css/main.css" %}" rel="stylesheet">
+        <link href="{% static "css/responsive.css" %}" rel="stylesheet">
+        <link href="{% static "css/animate.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/font-icon.css" %}" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href= "{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/estilo.css" %}" rel="stylesheet">
+    </head>
+    <body>
+        
+        <section class="banner" role="banner"> 
+            <!--Navegaçao -->
+            <header id="header">
+                <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+                    <nav class="navigation" role="navigation">
+                        <ul class="primary-nav">
+                            <li><a href="{% url 'index' %}">HOME</a></li>           
+                        </ul>
+                    </nav>
+                    <a href="#" class="nav-toggle">Menu<span></span></a>
+                </div>
+            </header>
+            <!--Navegaçao --> 
+            <!-- banner  -->
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                <div class="banner-text text-center">
+                <h1>CADASTRO DE ALUNO</h1>
+                <p>FACULDADE DE TECNOLOGIA DE SÃO PAULO</p>        
+            <!-- banner text --> 
+            </div>
+            <div>
+                <form class="caluno">
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <legend>IDENTIFICAÇÃO DO ALUNO</legend>                                  
+                            <p><label for="nome">Nome</label>  <input class="campo" type="text" id="nome" name="nome" size="30" maxlength="35" placeholder=" Digite o nome"></p>
+                            <p><label for="cidade">CPF</label>  <input class="campo" type="text" id="CPF" name="CPF" size="30" maxlength="11" placeholder=" Digite o CPF"></p>
+                            <p><label for="email">E-mail</label>  <input class="campo" type="email" id="email" name="email" size="30" placeholder=" Digite o E-mail"></p>                                                                                                     
+                            <p><label for="telefone">Telefone</label>  <input class="campo" type="tel" id="telefone" name="telefone" size="30" placeholder=" Digite o telefone"></p>
+                            <p><label for="nome">Login</label> <input class="campo" type="text" id="nome" name="nome" size="30" maxlength="7" placeholder=" Crie um Login"></p>                                            
+                            <p><label for="snome">Senha</label>  <input class="campo" type="password" id="password" name="password" size="30" maxlength="15" placeholder=" Crie uma senha"></p>                                                                                                                                             
+                                
+                            <legend>Sexo</legend>      
+                                <input type="radio" name="sexo" value="masculino" id="masc"> <label for="masc">Masculino</label>  
+                                <input type="radio" name="sexo" value="feminino" id="femn"> <label for="femn">Feminino</label> 
+                            <button class="botao" type="submit" name="submit">Enviar</button>                                                      
+                        </div><br/>                                 
+                    </fieldset> 
+                </form>                                        
+        </select>
+    </body>
+</html>
