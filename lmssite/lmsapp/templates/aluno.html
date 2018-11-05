@@ -14,6 +14,36 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href= "{% static "css/bootstrap.min.css" %}" rel="stylesheet">
         <link href="{% static "css/estilo.css" %}" rel="stylesheet">
+        <script>
+            function enviar(){
+                var nome = document.getElementById("nome");
+                var cpf = document.getElementById("cpf");
+                var tel = document.getElementById("telefone");
+                var email = document.getElementById("email");
+                var emailV = email.value.length;
+                var telV = tel.value.length;
+                var cpfV = cpf.value.length;
+                var nomeV = nome.value;
+                if(nomeV == ""){
+                    alert("Preencha o campo NOME!")
+                }
+                else if(cpfV == ""){
+                    alert("Campo CPF é obrigatório!")
+                }
+                else if(cpfV < 11){
+                    alert("CPF deve conter no mínimo onze caracteres!")
+                }
+                else if(emailV == ""){
+                    alert("Campo E-mail é obrigatório!")
+                }
+                else if(telV < 11){
+                    alert("Telefone deve conter no mínimo onze caracteres!")
+                }                
+                else if(telV > 11){
+                    alert("Telefone deve conter no máximo onze caracteres!")
+                }                
+            }
+        </script>
     </head>
     <body>
         
