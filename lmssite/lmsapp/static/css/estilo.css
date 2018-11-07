@@ -1,7 +1,47 @@
-@font-face{
-    font-family: 'ola';
-    src: url("../fonts/SECRCODE.TTF");
+img {
+    padding-top: 250px;
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-h1#fonte{
-    font-family: 'ola';
+form#flogin {
+    text-align: center;
 }
+
+input#login {
+    padding: 15px;
+    margin: 10px;
+    opacity: 0.3;
+}
+
+input#senha {
+    padding: 15px;
+    margin: 10px;
+    opacity: 0.3;
+}
+
+label#llogin {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+label#lsenha {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 20px;
+    text-align: justify;
+ }
+
+body {
+    background-image: url("banner.jpg");
+    background-repeat: no-repeat;
+}
+button#blogin{
+    width: 70px;
+    padding: 10px;
+}
+
